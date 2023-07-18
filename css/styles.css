@@ -1054,7 +1054,7 @@ ul{
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.2;
     letter-spacing: 0.48px;
     color: var(--c-grey);
 }
