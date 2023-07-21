@@ -384,9 +384,8 @@
     <footer class="footer">
       <div class="footer-all container">
         <div class="conteiner-footer">
-          <a href="index.html" class="logo-footer link"
-            >Web<span class="stud">Studio</span></a
-          >
+          <a href="index.html" class="logo-footer link">
+            Web<span class="stud">Studio</span></a>
 
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
@@ -424,22 +423,22 @@
           </ul>
         </div>
         <div class="subscribe-conteiner">
-          <div class="input-subscribe-conteiner">
           <p class="text-subscribe">Subscribe</p>
-          <input type="email" class="input-subscribe" placeholder="E-mail" />
-        </div>
+          <form class="input-subscribe-conteiner">
+            <label class="input-footer-label">
+          <input type="email" class="input-subscribe" placeholder="E-mail" name="e-mail" />
+        </label>
           
-          <div class="subscribe-btn-conteiner">
-          <button class="subscribe-btn">Subscribe
+          <button type="submit" class="subscribe-btn">Subscribe
             <svg class="icons-modal-subscribe" width="24" height="24">
               <use href="./images/icons.svg#icon-frame"></use>
             </svg>     
           </button>
-          </div>
-          
-        </div>
+        </form>
+      </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-modal" data-modal-close>
@@ -448,15 +447,19 @@
           </svg>
         </button>
       </div>
-      <div class="login-form-conteiner"></div>
-      <form class="login-form">
-        <p class="form-title">Leave your contacts and we will call you back</p>
-        <label class="frame-input">
+      <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="login-form">
+        <div class="conteiner-label">
+        <label class="frame-input" for="user-name">
           <span class="text-label">Name</span>
-          <input class="input-punkts" type="text" name="first" />
+
+          <div class="input-modal">
+          <input class="input-punkts" type="text" name="user" id="user-name" />
           <svg class="icons-modal-form" width="18" height="24">
-            <use href="./images/icons.svg#icon-person"></use></svg
-        ></label>
+            <use href="./images/icons.svg#icon-person"></use></svg>
+</div>
+          </label>
+          </div>
 
         <label class="frame-input">
           <span class="text-label">Phone</span>
@@ -472,8 +475,8 @@
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
         </label>
-        <label class="frame-input"
-          ><span class="text-label">Comment</span>
+        <label class="frame-input">
+          <span class="text-label">Comment</span>
           <textarea
             name="comment"
             class="comment-modal"

@@ -679,7 +679,6 @@ ul{
 }
 
 .subscribe-conteiner {
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 80px;
@@ -688,8 +687,10 @@ ul{
 
 .input-subscribe-conteiner {
     display: flex;
-    flex-direction: column;
-    margin-right: 24px;
+}
+
+.input-footer-label {
+    gap: 24px;
 }
 
 .text-subscribe {
@@ -697,9 +698,9 @@ ul{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-    padding-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .input-subscribe {
@@ -709,39 +710,34 @@ ul{
     border-radius: 4px;
     border: 1px solid var(--white-color);
     background-color: var(--navyblue-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     padding-left: 16px;
     color: var(--white-color);
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.48px;
-}
-
-.subscribe-btn-conteiner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
+    line-height: 1.5;
+    letter-spacing: 0.004em;
 }
 
 .subscribe-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
-    background: #4D5AE5;
-    outline: none;
+    background-color: #4D5AE5;
+    border: none;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.64px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     color: var(--white-color);
     padding-right: 16px;
+    cursor: pointer;
+    margin-left: 24px;
 }
 
 .icons-modal-subscribe {
@@ -899,12 +895,13 @@ ul{
     transform: translateY(0);
 }
 
-/*------NODAL------*/
+/*------MODAL------*/
 
 .backdrop{
     height: 100%;
     width: 100%;
     position: fixed;
+    padding: 72px 24px 24px 24px;
     top: 0;
     left: 0;
     background-color: rgba(46, 47, 66, 0.40);
@@ -960,23 +957,14 @@ ul{
     pointer-events: none;
 }
 
-.login-form-conteiner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 24px;
-}
-
 .login-form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
     position: relative;
 }
 
@@ -984,12 +972,16 @@ ul{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    line-height: 0.03; 
-    letter-spacing: 0.32px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
     margin-bottom: 16px;
     text-align: center;
     color: var(--navyblue-color);
 
+}
+
+.input-modal {
+    position: relative;
 }
 
 .input-punkts {
@@ -1012,7 +1004,16 @@ ul{
 .frame-input {
     display: flex;
     flex-direction: column;
-    
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--c-grey);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.conteiner-label {
+    margin-bottom: 8px;
 }
 
 .text-label {
