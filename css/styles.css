@@ -1059,7 +1059,10 @@ ul{
 }
 
 .checkbox-conteiner {
-    margin-top: 16px;
+    display: flex;
+    width: 360px;
+    margin-bottom: 24px;
+    
 }
 
 .checkbox-modal {
@@ -1072,7 +1075,7 @@ ul{
     color: var(--c-grey);
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: inline-flex;
 }
 
 
@@ -1086,13 +1089,12 @@ ul{
 }
 
 .checkbox-link {
-    
+    display: inline-block;
     color: var(--blue-color);
 }
 
 .checkbox-span {
     display: inline-flex;
-    align-items: center;
     justify-content: center;
     width: 16px;
     height: 16px;
@@ -1112,8 +1114,6 @@ ul{
 
 .btn-send {
     display: block;
-    border: none;
-    margin-top: 24px;
     border: none;
     min-width: 169px;
     height: 56px;
