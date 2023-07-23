@@ -1053,10 +1053,8 @@ ul{
 }
 
 .checkbox-conteiner {
-    display: flex;
     width: 360px;
     margin-bottom: 24px;
-    
 }
 
 .checkbox-modal {
@@ -1067,11 +1065,8 @@ ul{
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--c-grey);
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
+    display: block;
 }
-
 
 .checkbox-btn {
     display: none;
@@ -1082,7 +1077,6 @@ ul{
 }
 
 .checkbox-link {
-    display: inline-block;
     color: var(--blue-color);
 }
 
