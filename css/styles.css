@@ -406,10 +406,6 @@ ul {
     padding-left: 0;
 }
 
-.conteiner-team{
-    
-}
-
 .team-cards{
     background-color #FFFFFF;
     display: flex;
@@ -419,7 +415,6 @@ ul {
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
 }
 
 /*.team-conteiner-icon {
@@ -997,8 +992,7 @@ ul{
     border-color: var(--blue-color);
 }
 
-.input-modal:hover .icons-modal-form,
-.input-modal:focus .icons-modal-form {
+.input-punkts:focus + .icons-modal-form {
     fill: #4D5AE5;
 }
 
@@ -1053,8 +1047,8 @@ ul{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-conteiner:hover .comment-modal,
-.comment-conteiner:focus .comment-modal {
+.comment-modal:hover,
+.comment-modal:focus {
     border-color: #4D5AE5;
 }
 
@@ -1080,7 +1074,6 @@ ul{
 
 
 .checkbox-btn {
-    display: flex;
     display: none;
 }
 
@@ -1109,7 +1102,7 @@ ul{
 }
 
 .checkbox-btn:checked +.checkbox-modal .checkbox-span {
-    background-color: var(--blue-color);
+    background-color: var(--c-ocean);
     border: none;
     fill: var(--c-cloud);
 }
